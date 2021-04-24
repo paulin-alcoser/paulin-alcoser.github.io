@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@500&display=swap');
+
+.header{
+    display:flex;
+    padding:15px 20px;
+    justify-content: space-between;
+    position:sticky;
+    /* background-color:transparent; */
+    background-color:rgba(0,0,0,0.9);
+    /* background-color:white; */
+    top:0;
+    z-index:100;
+    /* border-bottom: 1px solid #374785 */
+}
+.header__left{
+    display:flex;
+    text-align:center; 
+    /* border-bottom: 5px solid #A8D0E6 ; */
+}
+
+.header__left > h1{
+    
+    color:white;
+    /* color: #374785; */
+    font-family: 'Poppins', sans-serif;
+    font-size:40px;
+}
+
+.header__left >h1 >span{
+    color: #FC4445
+    /* color: #F76C6C; */
+}
+
+.header__right{
+    display:flex;
+}
+
+.header__button{
+    padding:10px;
+    margin-left:5px;
+    margin-right:5px;
+}
+.header__button:hover{
+    padding:10px;
+    background-color:#FC4445;
+    border-radius: 10px;
+    
+}
+
+
+
+#button{
+    font-family: 'Poppins', sans-serif;
+    background-color: transparent;
+    color: white;
+    padding:1px;
+    /* color: #374785; */
+    font-size:20px;
+    border: none;
+    outline-width: 0;
+}
+
+#button > .active{
+    border-bottom: 5px solid #FC4445;
+    font-weight:bold;
+    font-size:22px;
+}
+.header__toggle{
+    position:absolute;
+    top: .75rem;
+    right: 10%;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height:21px;
+}
+
+.header__bar{
+    height: 3px;
+    width:100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 900px){
+    .header{
+        flex-direction: column;
+    }
+    .header__right{
+       display: none  
+    }
+
+    .header__left > h1{
+        font-size: 20px;
+    }
+
+    .header__toggle{
+        display: flex;
+    }
+
+    .active{
+        display: flex;
+        flex-direction: column;  
+        justify-content: center;
+        align-items: center;
+        transition: ease-in 1s;
+    }
+    
+}
+
+
+
+

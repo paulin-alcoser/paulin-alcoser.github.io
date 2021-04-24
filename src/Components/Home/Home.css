@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@500&display=swap');
+
+
+.home{
+    height:100vh;
+    /* background-color:#19181A; */
+    background-color:rgba(0,0,0,0.9);
+    background-position: center center;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-image: url("home_paulin.jpg")
+}
+
+.home__box{
+    height:100%;
+    width:100%;
+    background-color: rgba(0,0,0,0.6) ;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.home__boxName{
+    width:17ch;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    animation: typeName 7s steps(11) 3s infinite ;
+    overflow:hidden;
+    white-space: nowrap;
+    border-right: 5px solid white;
+    font-size:100px
+}
+.home__boxName > span{
+    color: #FC4445;
+    font-weight:bold;
+}
+
+.home__boxRole{
+    margin-top:10px;
+    width:17ch;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    animation: typeRole 7s steps(21) 3s infinite ;
+    overflow:hidden;
+    white-space: nowrap;
+    border:none;
+    font-size:50px;
+}
+
+@keyFrames typeName{
+    0%{
+        width:0ch;
+    }
+    50%{
+        width:11ch;
+        
+        
+    }
+    95%{
+        border-bottom:10px solid white;
+    }
+    100%{
+        width:11ch;
+        border: none;
+        border-bottom:10px solid white;
+    }
+}
+
+@keyframes typeRole{
+    0%{
+        width:0ch;
+    }
+    50%{
+        width:0ch;
+        
+    }
+    65%{
+        width:13ch;
+        border-right: 5px solid white;
+    }
+    100%{
+        width:13ch;
+        border-right: 5px solid white;
+    }
+}
+
+@media (max-width:750px){
+    .home__boxName{
+        font-size:30px;
+    }
+
+    .home__boxRole{
+        font-size: 25px;
+    }
+}
+
+
