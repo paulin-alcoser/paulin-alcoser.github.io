@@ -52,12 +52,12 @@
     0%{
         width:0ch;
     }
-    50%{
+    45%{
         width:11ch;
         
         
     }
-    95%{
+    99%{
         border-bottom:10px solid white;
     }
     100%{
@@ -71,16 +71,16 @@
     0%{
         width:0ch;
     }
-    50%{
+    55%{
         width:0ch;
         
     }
-    65%{
-        width:13ch;
+    70%{
+        width:15ch;
         border-right: 5px solid white;
     }
     100%{
-        width:13ch;
+        width:15ch;
         border-right: 5px solid white;
     }
 }
